@@ -1,0 +1,38 @@
+{
+  "name": "jumper-message",
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "repository": "bdougherty/jumper-message",
+  "homepage": "https://github.com/bdougherty/jumper-message#readme",
+  "bugs": {
+    "url": "https://github.com/bdougherty/jumper-message/issues"
+  },
+  "author": {
+    "name": "Brad Dougherty",
+    "email": "me@brad.is"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">= 8.3"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "balanced-line-split": "^1.1.0",
+    "chalk": "^2.4.1",
+    "gradient-string": "^1.2.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "eslint-config-bdougherty": "^5.1.1",
+    "xo": "^0.22.0"
+  },
+  "xo": {
+    "extends": "bdougherty"
+  }
+}
