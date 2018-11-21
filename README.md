@@ -56,6 +56,7 @@ Set the style of the jumper to a [chalk style](https://github.com/chalk/chalk#st
 * [jumper-message-cli](https://github.com/bdougherty/jumper-message-cli) - CLI for this module
 * [chalk](https://github.com/chalk/chalk)
 * [gradient-string](https://github.com/bokub/gradient-string)
+* [Friday deploy script for Capistrano](https://gist.github.com/exAspArk/4f18795bc89b6e2666ee)
 
 ## License
 
