@@ -24,13 +24,13 @@
   ],
   "dependencies": {
     "balanced-line-split": "^1.1.0",
-    "chalk": "^2.4.1",
+    "chalk": "^2.4.2",
     "gradient-string": "^1.2.0"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
+    "ava": "^2.4.0",
     "eslint-config-bdougherty": "^5.1.1",
-    "xo": "^0.22.0"
+    "xo": "^0.25.3"
   },
   "xo": {
     "extends": "bdougherty"
