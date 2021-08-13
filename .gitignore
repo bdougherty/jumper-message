@@ -2,6 +2,7 @@ node_modules/
 .DS_Store
 Thumbs.db
 .idea/
+.nyc_output/
 .vscode/
 *.sublime-project
 *.sublime-workspace

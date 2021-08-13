@@ -1,6 +1,6 @@
-const chalk = require('chalk');
-const gradientString = require('gradient-string');
-const balancedLineSplit = require('balanced-line-split');
+import chalk from 'chalk';
+import gradientString from 'gradient-string';
+import balancedLineSplit from 'balanced-line-split';
 
 function jumper(message, options = {}) {
 	const { buildingStyle, personStyle, messageStyle, extraFloors, compact, gradient } = {
@@ -56,20 +56,26 @@ function jumper(message, options = {}) {
 		}
 
 		for (let i = 0; i < additionalLines.length; i += 2) {
-			output.push(chalk`{${buildingStyle} ┛┗┛┗┛┃}        ${additionalLines[i]}`);
-			output.push(chalk`{${buildingStyle} ┓┏┓┏┓┃}        ${additionalLines[i + 1]}`);
+			output.push(
+				chalk`{${buildingStyle} ┛┗┛┗┛┃}        ${additionalLines[i]}`,
+				chalk`{${buildingStyle} ┓┏┓┏┓┃}        ${additionalLines[i + 1]}`
+			);
 		}
 	}
 
 	for (let i = 0; i < extraFloors; i++) {
-		output.push(chalk`{${buildingStyle} ┛┗┛┗┛┃}`);
-		output.push(chalk`{${buildingStyle} ┓┏┓┏┓┃}`);
+		output.push(
+			chalk`{${buildingStyle} ┛┗┛┗┛┃}`,
+			chalk`{${buildingStyle} ┓┏┓┏┓┃}`
+		);
 	}
 
-	output.push(chalk`{${buildingStyle} ┃┃┃┃┃┃}`);
-	output.push(chalk`{${buildingStyle} ┻┻┻┻┻┻}`);
+	output.push(
+		chalk`{${buildingStyle} ┃┃┃┃┃┃}`,
+		chalk`{${buildingStyle} ┻┻┻┻┻┻}`
+	);
 
 	return output.join('\n');
 }
 
-module.exports = jumper;
+export default jumper;

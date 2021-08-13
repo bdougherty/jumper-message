@@ -11,7 +11,8 @@
 ## Usage
 
 ```js
-const jumperMessage = require('jumper-message');
+import jumperMessage from 'jumper-message';
+
 console.log(jumperMessage('message'));
 ```
 

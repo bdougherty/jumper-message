@@ -1,5 +1,5 @@
 import test from 'ava';
-import jumper from '.';
+import jumper from './index.js';
 
 test('normal', (t) => {
 	const result = jumper('friday deploy, good luck!');
