@@ -29,7 +29,7 @@
     "gradient-string": "^1.2.0"
   },
   "devDependencies": {
-    "ava": "^3.15.0",
+    "ava": "^5.2.0",
     "nyc": "^15.1.0",
     "xo": "^0.44.0"
   },
